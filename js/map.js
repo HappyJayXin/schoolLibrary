@@ -9,6 +9,6 @@ function initMap() {
     position: position,
     map: map,
     animation: google.maps.Animation.DROP,
-    label: {text:'BOOK',color:'#000'}
+    label: {text:'BOOK',color:'#000000'}
   });
 }
