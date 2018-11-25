@@ -1,0 +1,260 @@
+/* 
+*descript:各個部分說明用註解分開
+*author:xingyu (Jay)
+*update:2018/09/02 14:11 
+*/
+
+/********************** 共用 ************************/
+.center {
+  text-align: center;
+}
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+}
+/* ******************************每段落間距****************************** */
+#article1,
+#article2,
+#article3,
+#article4,
+#article5 {
+  margin-bottom: 4em;
+}
+/* ******************************標題****************************** */
+header {
+  text-align: center;
+  padding: 3em 0 1em;
+}
+header h1 {
+  font-size: 2.5em;  
+}
+header h1,
+header h4 {
+  letter-spacing: 3px;
+}
+header h4 {
+  color: #576574;
+}
+/* ******************************目錄按鈕****************************** */
+nav {
+  text-align: right;
+  position: relative;
+}
+nav > a {
+  color: #636e72;
+  border: 2px solid #576574;
+  padding: 0.7em 0.9em 0.2em;
+  border-radius: 5px;
+  transition: all 0.5s;
+  box-sizing: border-box;
+}
+nav > a:hover {
+  box-shadow: 2px 3px 3px rgba(189, 195, 199, 1);
+}
+/* ******************************目錄內容****************************** */
+.menu {
+  /* 目錄位置 */
+  text-align: left;
+  margin-top: 0.8em;
+  border: 1px solid white;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 2px;
+  position: absolute;
+  right: 0;
+  -moz-box-shadow: 4px 4px 12px 4px rgb(189, 195, 199, 0.8);
+  -webkit-box-shadow: 4px 4px 12px 4px rgb(189, 195, 199, 0.8);
+  box-shadow: 4px 4px 12px 4px rgb(189, 195, 199, 0.8);
+  position: absolute;
+  z-index: 99;
+}
+.menuHide {
+  display: none;
+}
+nav ul li {
+  line-height: 35px;
+  padding-right: 0.3em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #576574;
+  font-size: 1.3em;
+}
+nav ul li a:hover {
+  color: #000;
+}
+/* ******************************圖片輪播****************************** */
+#slider {
+  margin: 20px 0 0;
+}
+.owl-carousel .owl-nav button {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.owl-carousel .owl-nav button i {
+  background-color: #fff;
+  font-size: 1.5em;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  opacity: 0.8;
+  border-radius: 3px;
+}
+.owl-carousel .owl-nav .owl-next {
+  left: auto;
+  right: 20px;
+}
+/* ******************************索引跳躍****************************** */
+.center {
+  text-align: center;
+}
+#article1 .introduce i {
+  font-size: 6em;
+  padding: 1em 0;
+}
+#article1 .introduce span {
+  font-size: 2em;
+}
+#article1 .introduce p {
+  line-height: 30px;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+}
+/* ******************************按紐****************************** */
+#article1 .introduce a {
+  text-decoration: none;
+}
+.btn {
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5em 1.1em;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  color: #000;
+  font-size: 1.2em;
+  background-color: #f2f2f2;
+}
+.btn:hover {
+  box-shadow: 0px 2px 5px 3px #d1d8e0;
+}
+/* ******************************圖書分類搜尋****************************** */
+.search {
+  width: 100%;
+}
+.search span {
+  font-size: 2em;
+}
+/**搜尋欄 */
+.search div input {
+  width: 100%;
+  height: 30px;
+  font-size: 1.1em;
+  margin: 1em 0;
+  padding: 0 0.5em;
+  font-family: "FontAwesome";
+}
+/** 表格 */
+#article2 table {
+  border: 2px solid #000;
+}
+#article2 table tr td,
+#article2 table tr th {
+  border: 1px solid #000;
+}
+#article2 table {
+  text-align: left;
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 2em;
+}
+#article2 table tr td {
+  padding: 0.8em 0.5em;
+}
+#article2 table tr th {
+  font-size: 1.3em;
+  padding: 0.9em 0.5em;
+}
+#article2 table tr:nth-child(odd) {
+  background: rgba(236, 240, 241, 0.5);
+}
+/* ******************************背景圖片****************************** */
+#article3 figure {
+  background: url("../img/bg.jpg") no-repeat center center fixed;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 1px;
+}
+/* ******************************Back to top****************************** */
+.bkTop {
+  position: fixed;
+  bottom: 1.5em;
+  right: 1.5em;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 0.8em;
+  padding: 0.9em;
+  border-radius: 1px;
+  display: none;
+}
+.bkTop:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* ******************************樓層介紹****************************** */
+#article4 .floorChoose span {
+  font-size: 2em;
+}
+#article4 .floorChoose .btnF {
+  width: 48%;
+  cursor: pointer;
+  border: none;
+  margin: 1px;
+  transition: 0.1s;
+}
+#article4 .floorChoose .btnF.active {
+  /* 所選按鈕加上class */
+  background-color: #e0e0e0;
+}
+#article4 .floorChoose .btnF:active {
+  box-shadow: 0px 0px 0px 0px #d1d8e0;
+}
+#article4 .floorDetail span {
+  font-size: 1em;
+}
+#article4 .floorDetail span i {
+  font-size: 1.4em;
+  color: #3c6382;
+}
+#article4 .floorDetail p {
+  line-height: 30px;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+}
+/* 共同margin */
+#article4 .floorChoose .floorbtn,
+#article4 .floorDetail p {
+  margin-top: 1.2em;
+  margin-bottom: 2em; /*需做RWD處理*/
+}
+/* ***********************地圖*********************** */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  width: 100%;
+}
+#map{
+  width: 100%;
+  height: 200px;
+}

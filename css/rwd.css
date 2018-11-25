@@ -1,0 +1,12 @@
+@media only screen and (min-width: 900px) {
+  #article1,
+  #article2,
+  #article3,
+  #article4,
+  #article5 {
+    margin-bottom: 10em;
+  }
+  #map{    
+    height: 500px;
+  }
+}
