@@ -247,11 +247,14 @@ nav ul li a:hover {
   margin-bottom: 2em; /*需做RWD處理*/
 }
 /* ***********************地圖*********************** */
+#article5{
+  height: 400px;
+}
 .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
-  height: 0;
+  height: 100%;
   width: 100%;
 }
 #map{
