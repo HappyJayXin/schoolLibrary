@@ -6,6 +6,9 @@
   #article5 {
     margin-bottom: 10em;
   }
+  #article5{
+    height: 500px;
+  }
   #map{    
     height: 500px;
   }
